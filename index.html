@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaCAD Showcase</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+<body>
+
+    <header>
+        <div id="div_header">
+            <img src="logo.svg" alt="LaCAD Logo" >
+            <div>
+                <h1>LaCAD</h1>    
+                <h5>Laboratório de Computação de Alto Desempenho</h5>
+            </div>
+        </div>
+            
+    </header>
+
+    <!-- <nav>
+        <ul>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#location">Location</a></li>
+        </ul>
+    </nav> -->
+
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div id="projectCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption">
+                        <h3>PathoSpotter</h3>
+                        <p>Tools and methods of Computational Pathology for aiding diagnosis in nephropathology.</p>
+                        <a href="https://pathospotter.bahia.fiocruz.br/" class="btn btn-info btn-project">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <h3>Epibot</h3>
+                        <p>Epitope prediction tool.</p>
+                        <a href="http://epibot.uefs.br/" class="btn btn-info btn-project">Learn More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption">
+                        <h3>Scannet</h3>
+                        <p>Network Similarity Analysis (NSA) for identifying communities in networks whose links depend on the similarity of proteins.</p>
+                        <a href="https://projectsn.github.io/scannet/" class="btn btn-info btn-project">Learn More</a>
+                    </div>
+                </div>
+                <!-- Add more carousel items as needed -->
+            </div>
+            <a class="carousel-control-prev" href="#projectCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#projectCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+    <section id="about" style="display: flex">
+        <div style="display: flex">
+            <h2>About</h2>
+            <p>The focus of the lab is to develop high-performance applications to deal with real-world problems in bioinformatics and medicine. We strongly work to use academic research to fulfill the demands of the industry. Currently, our main interest is in Computational Pathology.</p>
+            <div id="moreInfo">
+                <p>Having sponsors like UEFS (Universidade Estadual de Feira de Santana) and Fapesb, we strive to bridge the gap between academic research and practical applications in the field of high-performance computing.</p>
+                <p>Our lab is located at Universidade Estadual de Feira de Santana, Department of Technology / LABOTEC 3, Av. Transnordestina, s/n – Novo Horizonte, 44036-900, Feira de Santana, Bahia, Brazil.</p>
+            </div>
+            <button class="btn btn-primary btn-more-info" onclick="toggleInfo()" style="max-width: 150px;">Read More</button>
+        </div>
+        <div style="display: ruby">
+                <img src="images/fapesb_logo.png" alt="Fapesb Logo" class="sponsor-logo">
+                <img src="images/uefs_logo.png" alt="UEFS Logo" class="sponsor-logo">
+        </div>
+    </section>
+
+    <section id="location">
+        <div>
+            <h2>Location</h2>
+            <!-- Google Maps Embed -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.9337673391976!2d-38.972598737225596!3d-12.19842146697729!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x714388c2af92357%3A0xf06781118830e1ef!2sLABOTEC%20III%20-%20Laborat%C3%B3rios%20de%20Engenharia%20de%20Computa%C3%A7%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1708559904353!5m2!1spt-BR!2sbr" 
+                
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 LaCAD - Laboratório de Computação de Alto Desempenho</p>
+        <p>Universidade Estadual de Feira de Santana Departamento de Tecnologia / LABOTEC 3<br>Av. Transnordestina, s/n – Novo Horizonte 44036-900, Feira de Santana, Bahia, Brazil</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,183 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #333;
+    color: white;
+    padding: 1em;
+}
+
+header img {
+    width: 100px; /* Adjust the width of the logo */
+    height: auto;
+    margin-right: 50pt;
+    margin-left: 10%;
+}
+
+header div {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+}
+
+#div_header {
+    flex-direction: row;
+}
+
+header h1 {
+    margin: 20px 0 0 0; /* Remove default margin to avoid extra spacing */
+}
+
+nav {
+    background-color: #555;
+    padding: 0.5em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+#projects .carousel-inner {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#projects .carousel-item {
+    text-align: left;
+    padding: 120px; /* Adjust the padding to increase the height */
+}
+
+#projects .carousel-item:nth-child(odd) {
+    background-color: #3498db; /* Adjust background colors as needed */
+}
+
+#projects .carousel-item:nth-child(even) {
+    background-color: #e74c3c; /* Adjust background colors as needed */
+}
+
+#projects .carousel-caption {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#projects .carousel-caption h3 {
+    color: #fff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #fff;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.btn-project {
+    margin-top: 4px;
+}
+
+#about img {
+    size: 200px;
+    
+}
+
+#about div {
+    flex-direction: column;
+}
+
+#moreInfo {
+    display: none;
+}
+
+#sponsors {
+    padding: 50px;
+    background-color: #f8f9fa; /* Light gray background */
+    text-align: center;
+}
+
+#sponsors h2 {
+    margin-bottom: 20px;
+}
+
+.sponsor-logo {
+    max-width: 200px; /* Set a fixed width for the logos */
+    max-height: 100px; /* Set a fixed height for the logos */
+    margin: 10px; /* Adjust margin as needed */
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow flex items to wrap to the next line */
+}
+
+.flex-item {
+    width: 48%; /* Adjust width as needed, leaving some space for margin */
+    margin-bottom: 20px;
+}
+
+
+
+@media screen and (max-width: 767px) {
+    /* Apply styles for screens up to 767px wide */
+    .flex-container {
+        flex-direction: column; /* Change flex direction to column for smaller screens */
+    }
+
+    .flex-item {
+        width: 100%; /* Make each item take the full width on smaller screens */
+    }
+}
+
+#location div {
+    display: flex;
+    flex-direction: column; 
+}
